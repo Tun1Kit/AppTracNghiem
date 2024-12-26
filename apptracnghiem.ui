@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dangNhapUI</class>
+ <widget class="QDialog" name="dangNhapUI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>485</width>
+    <height>583</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Ứng Dụng Trắc Nghiệm</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #7F7F7F;</string>
+  </property>
+  <widget class="QStackedWidget" name="das">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>485</width>
+     <height>583</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <widget class="QWidget" name="loginPage">
+    <widget class="QLabel" name="classMaLabel">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>-10</y>
+       <width>281</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>VNI-Hobo</family>
+       <pointsize>55</pointsize>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LayoutDirection::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: transparent;
+color:rgb(255, 255, 255)</string>
+     </property>
+     <property name="text">
+      <string>LOGIN</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="taikhoan">
+     <property name="geometry">
+      <rect>
+       <x>105</x>
+       <y>220</y>
+       <width>271</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Verdana</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+    background-color: rgb(121, 121, 121); /* Nền xám */
+    border-radius: 5px; /* Bo góc */
+    padding-bottom: 2px; /* Khoảng cách phía dưới */
+    padding-top: 3px; /* Khoảng cách phía trên */
+    padding-left: 6px; /* Khoảng cách bên trái */
+    border-bottom: 1px solid rgb(145, 145, 145); /* Viền dưới màu xám nhạt */
+    color: rgb(0, 0, 0); /* Màu chữ đen */
+}
+
+QLineEdit:focus {
+    border-bottom: 2px solid rgb(0, 122, 204); /* Thay đổi viền dưới khi có focus */
+}</string>
+     </property>
+     <property name="placeholderText">
+      <string>Mã Sinh Viên</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="matkhau">
+     <property name="geometry">
+      <rect>
+       <x>105</x>
+       <y>280</y>
+       <width>271</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Verdana</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+    background-color: rgb(121, 121, 121); /* Nền xám */
+    border-radius: 5px; /* Bo góc */
+    padding-bottom: 2px; /* Khoảng cách phía dưới */
+    padding-top: 3px; /* Khoảng cách phía trên */
+    padding-left: 6px; /* Khoảng cách bên trái */
+    border-bottom: 1px solid rgb(145, 145, 145); /* Viền dưới màu xám nhạt */
+    color: rgb(0, 0, 0); /* Màu chữ đen */
+}
+
+QLineEdit:focus {
+    border-bottom: 2px solid rgb(0, 122, 204); /* Thay đổi viền dưới khi có focus */
+}</string>
+     </property>
+     <property name="echoMode">
+      <enum>QLineEdit::EchoMode::Password</enum>
+     </property>
+     <property name="placeholderText">
+      <string>Mật Khẩu</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="login">
+     <property name="geometry">
+      <rect>
+       <x>169</x>
+       <y>350</y>
+       <width>151</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Verdana</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color:  rgb(255, 255, 255);
+    border: none; /* Không có viền */
+    color: rgb(0, 0, 0); /* Màu chữ trắng */
+    padding: 10px 20px; /* Khoảng cách bên trong nút */
+    text-align: center; /* Canh giữa chữ */
+    border-radius: 8px; /* Bo góc */
+}
+
+QPushButton:hover {
+    background-color: #45a049; /* Màu nền khi di chuột */
+}
+
+QPushButton:pressed {
+    background-color: #388e3c; /* Màu nền khi nút được nhấn */
+}</string>
+     </property>
+     <property name="text">
+      <string>Đăng Nhập</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="quenMK_Index">
+     <property name="geometry">
+      <rect>
+       <x>341</x>
+       <y>357</y>
+       <width>121</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Verdana</family>
+       <pointsize>9</pointsize>
+       <underline>true</underline>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: transparent; /* Không có nền */
+    color: white; /* Màu chữ trắng */
+    text-align: center; /* Canh giữa chữ */
+    border: none; /* Không có viền mặc định */
+    text-decoration: underline;
+}
+
+QPushButton:pressed {
+    color: red; /* Nền đỏ khi nút được nhấn */
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Quên Mật Khẩu</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>173</x>
+       <y>560</y>
+       <width>195</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Franklin Gothic Heavy</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(102, 102, 102);</string>
+     </property>
+     <property name="text">
+      <string>PTIT CONTEST APPLICATION</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="quenMKPage">
+    <widget class="QLabel" name="classMaLabel_2">
+     <property name="geometry">
+      <rect>
+       <x>65</x>
+       <y>-10</y>
+       <width>361</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>VNI-Hobo</family>
+       <pointsize>55</pointsize>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LayoutDirection::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: transparent;
+color:rgb(255, 255, 255)</string>
+     </property>
+     <property name="text">
+      <string>FORGOT</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="taikhoan2">
+     <property name="geometry">
+      <rect>
+       <x>105</x>
+       <y>210</y>
+       <width>271</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Verdana</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+    background-color: rgb(121, 121, 121); /* Nền xám */
+    border-radius: 5px; /* Bo góc */
+    padding-bottom: 2px; /* Khoảng cách phía dưới */
+    padding-top: 3px; /* Khoảng cách phía trên */
+    padding-left: 6px; /* Khoảng cách bên trái */
+    border-bottom: 1px solid rgb(145, 145, 145); /* Viền dưới màu xám nhạt */
+    color: rgb(0, 0, 0); /* Màu chữ đen */
+}
+
+QLineEdit:focus {
+    border-bottom: 2px solid rgb(0, 122, 204); /* Thay đổi viền dưới khi có focus */
+}</string>
+     </property>
+     <property name="placeholderText">
+      <string>Mã Sinh Viên</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="hoten">
+     <property name="geometry">
+      <rect>
+       <x>105</x>
+       <y>270</y>
+       <width>270</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Verdana</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+    background-color: rgb(121, 121, 121); /* Nền xám */
+    border-radius: 5px; /* Bo góc */
+    padding-bottom: 2px; /* Khoảng cách phía dưới */
+    padding-top: 3px; /* Khoảng cách phía trên */
+    padding-left: 6px; /* Khoảng cách bên trái */
+    border-bottom: 1px solid rgb(145, 145, 145); /* Viền dưới màu xám nhạt */
+    color: rgb(0, 0, 0); /* Màu chữ đen */
+}
+
+QLineEdit:focus {
+    border-bottom: 2px solid rgb(0, 122, 204); /* Thay đổi viền dưới khi có focus */
+}</string>
+     </property>
+     <property name="placeholderText">
+      <string>Họ và Tên</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="gioitinh">
+     <property name="geometry">
+      <rect>
+       <x>105</x>
+       <y>330</y>
+       <width>270</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Verdana</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+    background-color: rgb(121, 121, 121); /* Nền xám */
+    border-radius: 5px; /* Bo góc */
+    padding-bottom: 2px; /* Khoảng cách phía dưới */
+    padding-top: 3px; /* Khoảng cách phía trên */
+    padding-left: 6px; /* Khoảng cách bên trái */
+    border-bottom: 1px solid rgb(145, 145, 145); /* Viền dưới màu xám nhạt */
+    color: rgb(0, 0, 0); /* Màu chữ đen */
+}
+
+QLineEdit:focus {
+    border-bottom: 2px solid rgb(0, 122, 204); /* Thay đổi viền dưới khi có focus */
+}</string>
+     </property>
+     <property name="placeholderText">
+      <string>Giới Tính</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="quenMK">
+     <property name="geometry">
+      <rect>
+       <x>169</x>
+       <y>396</y>
+       <width>151</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Verdana</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color:  rgb(255, 255, 255);
+    border: none; /* Không có viền */
+    color: rgb(0, 0, 0); /* Màu chữ trắng */
+    padding: 10px 20px; /* Khoảng cách bên trong nút */
+    text-align: center; /* Canh giữa chữ */
+    border-radius: 8px; /* Bo góc */
+}
+
+QPushButton:hover {
+    background-color: #45a049; /* Màu nền khi di chuột */
+}
+
+QPushButton:pressed {
+    background-color: #388e3c; /* Màu nền khi nút được nhấn */
+}</string>
+     </property>
+     <property name="text">
+      <string>Xác Nhận</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="login_Index">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>402</y>
+       <width>121</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Verdana</family>
+       <pointsize>9</pointsize>
+       <underline>true</underline>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: transparent; /* Không có nền */
+    color: white; /* Màu chữ trắng */
+    text-align: center; /* Canh giữa chữ */
+    border: none; /* Không có viền mặc định */
+    text-decoration: underline;
+}
+
+QPushButton:pressed {
+    color: red; /* Nền đỏ khi nút được nhấn */
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Đăng Nhập</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>560</y>
+       <width>195</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Franklin Gothic Heavy</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(102, 102, 102);</string>
+     </property>
+     <property name="text">
+      <string>PTIT CONTEST APPLICATION</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>taikhoan</tabstop>
+  <tabstop>matkhau</tabstop>
+  <tabstop>login</tabstop>
+  <tabstop>quenMK_Index</tabstop>
+  <tabstop>taikhoan2</tabstop>
+  <tabstop>hoten</tabstop>
+  <tabstop>gioitinh</tabstop>
+  <tabstop>quenMK</tabstop>
+  <tabstop>login_Index</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

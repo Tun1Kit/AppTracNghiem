@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/extension">
+        <file>text/lophoc.txt</file>
+        <file>text/thongtin.txt</file>
+    </qresource>
+</RCC>

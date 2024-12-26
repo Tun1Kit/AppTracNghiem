@@ -1,0 +1,15 @@
+E23CQCN01-N:Công Nghệ Thông Tin CLC:3
+N23DCCI694:Nguyễn Minh Tú:Nam
+N23DCCI103:Trần Thị Mai B:Nam
+N23DCCI577:Lê Thị Lan:Nữ
+D24CQGA04-B:Thiết kế và phát triển game 4:4
+N23DCCI694:Nguyễn Minh Tú:Nam
+N23DCCI103:Trần Thị Mai:Nam
+N23DCCI577:Lê Thị Lan:Nữ
+N22DCCI778:Mái Thị Mai:Nữ
+D24CQPT03-B:Công nghệ đa phương tiện 3:5
+N22DCCI794:Lê Thị Lan:Nữ
+N21DCCK103:Nguyễn Thị Thanh:Nữ
+N21DCCK867:Bùi Thị Lan:Nữ
+N21DCCJ378:Nguyễn Thị Bích:Nữ
+N21DCCJ737:Phạm Minh Hoa:Nữ
